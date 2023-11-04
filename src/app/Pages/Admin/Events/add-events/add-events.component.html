@@ -1,0 +1,107 @@
+
+<div class="container ekatn mb-3">
+  <div class="row featurette">
+
+
+    <div class="col-md-7 position-static0 d-block rounded-2 shadow" style="border:1px solid rgb(114, 103, 103);">
+      <div class="container mt-3" style="margin-bottom: 30px">
+        <h1 class="fs-2 text-center pt-6 mt-5 mb-4  lh-1 fw-bold text-dark stil">Registrar un nuevo evento</h1>
+        <form class="px-3" (ngSubmit) = "formSubmit()"   >
+
+          <div class="form-floating mb-3 " >
+            <input type="username" class=" form-control rounded-1"  required [(ngModel)] = "evento.nombre" name="username" >
+            <label for="floatingInput">Nombre del evento</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class=" form-control rounded-1"  required [(ngModel)] = "evento.img" name="img" >
+          <label for="floatingInput">Imagen del evento</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" class=" form-control rounded-1"  required [(ngModel)] = "evento.descripcion" name="img" >
+        <label for="floatingInput">Descripcion</label>
+    </div>
+
+
+
+      <div class="row g-0">
+        <div class="col-sm-6 ">
+          <div class=" reniun form-floating mb-3">
+            <input type="text" class=" form-control rounded-1"  required [(ngModel)] = "evento.tipo" name="tipo" >
+            <label for="floatingInput">Tipo de evento</label>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="form-floating mb-3">
+            <input type="text" class=" form-control rounded-1"  required [(ngModel)] = "evento.invitado" name="invitado" >
+            <label for="floatingInput">Invitados</label>
+            </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-floating mb-3">
+        <input type="text" class=" form-control rounded-1"  required [(ngModel)] = "evento.departamento" name="departamento" >
+        <label for="floatingInput">Departamento</label>
+      </div>
+
+      <div class="row g-0">
+        <div class=" col-sm-6">
+          <div class="form-floating mb-3 reniun">
+            <input type="text" class=" form-control rounded-1"  required [(ngModel)] = "evento.lugar" name="lugar" >
+            <label for="floatingInput">Lugar</label>
+        </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="form-floating mb-3">
+            <input type="text" class=" form-control rounded-1"  required [(ngModel)] = "evento.fecha" name="fecha" >
+            <label for="floatingInput">Fecha del evento</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-success  signup1 w-100 mb-2 btn btn-lg  text-dark">
+          Guardar
+        </button >
+          <button  class="btn btn-outline-danger  signup2 w-100 mb-2 btn btn-lg text-dark " routerLink = "/admin/view-events">Cancelar</button>
+      </div>
+      </form>
+
+          <hr class="my-4">
+      </div>
+    </div>
+
+    <div class="col-md-5">
+      <div class="card card-cover h-100 overflow-hidden text-white  rounded-3 shadow-lg img">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h2 class="pt-6 mt-5 mb-4 display-6 lh-1 fw-bold text-dark text-center" style="letter-spacing: 4px;"><b>La quinta esfera</b></h2>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="" alt="" width="" height="" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small></small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small></small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+

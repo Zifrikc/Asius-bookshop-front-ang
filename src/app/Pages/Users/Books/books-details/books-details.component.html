@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 bg-dark">
+      <img src="{{libro.img}}" alt="Imagen del libro" width="180" height="420">
+    </div>
+    <div class="col-md-7">
+      <h1 class="fs-2 fst-italic fw-bold">{{libro.nombre}}</h1>
+
+      <div class="col d-flex">
+        <div class="col-md-4">
+          <p class=" fs-4 ">By: {{libro.autor}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <p class=" fs-4"> {{libro.editorial}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <p class=" fs-4"> {{libro.publicacion}}</p>
+        </div>
+      </div>
+
+      <h3 class="fw-bold fs-4">Sinopsis</h3>
+      <div class=" mb-3">{{libro.sinopsis}}</div>
+
+      <div class="col d-flex ">
+        <div class="col-md-4 d-flex" >
+        </div>
+
+        <div class="col-md-4 d-flex">
+        </div>
+
+        <div class="col-md-4 d-flex">
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="col-md-3 py-3">
+      <div class="comprar">
+        <div class="card">
+          <div class="card-body">
+              <div class="row d-flex">
+                <div class="col-md-6">
+                  <p class="fw-bold px-2 fst-italic">{{libro.estado}}</p>
+                </div>
+                <div class="col-md-6">
+                <p class="fp px-2 fst-italic">S/{{libro.costo}}</p>
+                </div>
+
+              </div>
+            <h1 class="card-title ff fw-bold">Descripcion</h1>
+            <div class="details">
+              <div class="row">
+                <div class="col d-flex">
+                  <p class="">Genero:</p> <p class="px-2">{{libro.genero}}</p>
+                </div>
+
+
+                <div class="col d-flex">
+                  <p class="">Idioma:</p> <p class="px-2">{{libro.idioma}}</p>
+                </div>
+
+
+                <div class="col d-flex">
+                  <p class=" ">ISBN:</p> <p class=" px-2">{{libro.isbn}}</p>
+                </div>
+
+                <div class="col d-flex">
+                  <p class=" ">Paginas:</p> <p class="px-2">{{libro.paginas}}</p>
+                </div>
+
+
+                <div class="col d-flex">
+                  <p class="">Formato:</p> <p class=" px-2">{{libro.formato}}</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <h2 class="pb-2 border-bottom"></h2>
+          <div class="button text-center">
+            <button   class="btn btn-outline-secondary pull-right mb-3">Agregar al carrito</button>
+            <button  *ngFor = "let i of books" [routerLink]="['/user/books-buy']" [queryParams]="{id: i.idBooks}" class="btn btn-outline-danger text-dark mb-3">Comprards ahora</button>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="sliderbar">
+  <h1 class="fs-4 fw-semibold text-center mt-2 ff-v">Panel administrativo</h1>
+  <li class="border-top my-3"></li>
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" routerlink = "/admin" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+        Inicio
+      </button>
+
+    </li>
+
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" routerLink = "/admin/perfil" data-bs-toggle="collapse" data-bs-target="#user-collapse" aria-expanded="false">
+        Perfil
+      </button>
+    </li>
+
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="false">
+        Usuarios
+      </button>
+      <div class="collapse" id="users-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/view-users">Ver usuarios</a></li>
+          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded">Agregar usuario</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#books-collapse" aria-expanded="false">
+        Libros
+      </button>
+      <div class="collapse" id="books-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/view-books">Ver libros</a></li>
+          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/add-books">Agregar nuevo libro</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#events-collapse" aria-expanded="false">
+        Eventos
+      </button>
+      <div class="collapse" id="events-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/view-events">Ver eventos</a></li>
+          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/add-events">Agregar nuevo evento</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="border-top my-3"></li>
+  </ul>
+</div>

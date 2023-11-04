@@ -1,0 +1,93 @@
+
+<div class="container mt-4 mb-3">
+  <div class="row featurette">
+    <div class="col-md-5">
+      <div class="card card-cover h-100 overflow-hidden text-white  rounded-3 shadow-lg img">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h2 class="pt-6 mt-5 mb-4 display-6 lh-1 fw-bold text-dark text-center" style="letter-spacing: 4px;"><b>La quinta esfera</b></h2>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="" alt="" width="" height="" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small></small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small></small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-7 position-static0 d-block rounded-2 shadow" style="border:1px solid rgb(114, 103, 103);">
+      <div class="container mt-3" style="margin-bottom: 30px">
+        <h1 class="fs-2 text-center pt-6 mt-5 mb-4  lh-1 fw-bold text-dark stil">Registrarse en The Secret of the Asius</h1>
+        <form class=""    (ngSubmit)="formSubmit()">
+
+          <div class="form-floating mb-3 " >
+              <input type="username" class=" form-control rounded-1 px-3"  required [(ngModel)] = "user.username" name="username">
+              <label for="floatingInput">Nombre de usuario</label>
+          </div>
+
+          <div class="form-floating mb-3">
+              <input type="password" class=" form-control rounded-1 px-3"  required [(ngModel)] = "user.password" name="password">
+              <label for="floatingInput">Contraseña</label>
+          </div>
+
+
+          <div class="row g-3">
+              <div class="col-sm-6 ">
+                  <div class="form-floating mb-3">
+                      <input type="text" class=" form-control rounded-1 px-3"  required [(ngModel)] = "user.nombuser" name="nombuser" >
+                      <label for="floatingInput">Nombre</label>
+                  </div>
+              </div>
+              <div class="col-6 ">
+                  <div class="form-floating mb-3">
+                      <input type="text" class=" form-control rounded-1 px-3"  required [(ngModel)] = "user.apelliuser" name="apelliuser" >
+                      <label for="floatingInput">Apellidos</label>
+                  </div>
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class=" form-control rounded-1 px-3"  required [(ngModel)] = "user.emailuser" name="emailuser">
+              <label for="floatingInput">Email</label>
+            </div>
+
+
+
+          <div class="form-floating mb-3">
+              <input type="text" class=" form-control rounded-1 px-3"  required [(ngModel)] = "user.telefuser" name="telefuser" #postalCode maxlength="9">
+              <label for="floatingInput">Telefono</label>
+          </div>
+
+
+
+
+        <div class="form-floating mb-3">
+          <label for="validationDefault04" class="floatingInput mt-x">Ocupacion</label>
+          <select class="form-select px-3 " id="validationDefault04" required [(ngModel)] = "user.perfiluser" name="perfiluser">
+            <option>Lector</option>
+            <option>Escritor</option>
+          </select>
+        </div>
+
+
+          <div class="text-center">
+              <button type="submit" class="btn w-100 mb-2  btn-lg btn-outline-success rounded-4 ">Guardar</button>
+              <button  (click) = "exit()" class="btn w-100 mb-2  btn-lg btn-outline-danger rounded-4 " type="button">Cancelar</button>
+          </div>
+      </form>
+          <br><br>
+          <small class="text-muted">Al hacer clic en Registrarse, acepta los términos de uso.</small>
+          <hr class="my-4">
+      </div>
+    </div>
+
+  </div>
+</div>

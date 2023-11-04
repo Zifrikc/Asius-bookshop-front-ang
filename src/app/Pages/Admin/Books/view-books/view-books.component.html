@@ -1,0 +1,60 @@
+<div class="container">
+  <h1 class="mt-5 mb-4 fs-2 lh-1 fw-bold text-dark">Libros registrados</h1>
+  <div class="card mb-3" *ngFor = "let i of books" >
+    <div class="row g-0">
+      <div class="col-md-2">
+            <img src="{{i.img}}"class="img-fluid rounded-start">
+            <div class=" text-center pt-1">
+              <p class="">        <strong>Paginas: </strong>{{i.paginas}}</p>
+
+            </div>
+
+      </div>
+
+      <div class="col-md-10">
+        <div class="card-body">
+
+          <div class="d-flex ">
+            <div class="p-2 fw-bold">{{i.nombre}}</div>
+            <div class="p-2 ms-auto fst-italic fw-medium text-uppercase">{{i.genero}}</div>
+            <div class="ms-auto p-2 fw-bold">{{i.autor}}</div>
+          </div>
+          <p class="px-2 text-justify"><strong>Sinopsis: </strong>{{i.sinopsis}}</p>
+
+          <div class="row px-2 mb-2">
+            <div class="col"><strong>Editorial: </strong>{{i.editorial}}</div>
+            <div class="col"><strong>Año de publicacion: </strong>{{i.publicacion}}</div>
+            <div class="col"><strong>Formato: </strong>{{i.formato}}</div>
+          </div>
+
+          <div class="row px-2 mb-2">
+            <div class="col"><strong>Documento: </strong>{{i.documento}}</div>
+
+          </div>
+
+          <div class="row px-2 mb-2">
+            <div class="col"><strong>ISBN: </strong>{{i.isbn}}</div>
+            <div class="col"><strong>Idioma: </strong>{{i.idioma}}</div>
+            <div class="col"><strong>Estado: </strong>{{i.estado}}</div>
+          </div>
+
+          <div class="d-flex ">
+            <div class="p-2 fw-bold"><button type="button" class="btn btn-outline-success"
+              [routerLink]="['/admin/edit-books']" [queryParams]="{id: i.idBooks}">
+              <i class="bi bi-pen"></i> Editar</button>
+            </div>
+
+            <div class="p-2 fw-bold">
+              <button type="button" class="btn btn-outline-danger" (click)="eliminarEventoPorId(i.idBooks)">
+                <i class="bi bi-trash"></i> Eliminar
+              </button>
+            </div>
+
+            <div class="ms-auto p-2 fw-bold"><strong>Costo: </strong>S/{{i.costo}}</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
