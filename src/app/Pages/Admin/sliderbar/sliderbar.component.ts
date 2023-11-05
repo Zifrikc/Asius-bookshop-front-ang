@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-sliderbar',
   templateUrl: './sliderbar.component.html',
-  styleUrls: ['./sliderbar.component.css']
+  styleUrls: ['./sliderbar.component.css',
+]
 })
 export class SliderbarComponent {
 

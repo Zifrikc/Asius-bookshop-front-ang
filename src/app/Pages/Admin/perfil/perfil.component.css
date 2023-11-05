@@ -1,0 +1,50 @@
+.card-body a{
+  text-decoration: none;
+  background: #e55039aa;
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.card-body p{
+  text-align: justify;
+  font-size: 15px;
+}
+
+.card-body a:hover{
+  background: #e55039;
+}
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+mat-card-actions button{
+
+  background: #e55039aa;
+  color: #fff;
+  padding: 6px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+
+
+mat-card-actions button:hover{
+  background: #e55039;
+}

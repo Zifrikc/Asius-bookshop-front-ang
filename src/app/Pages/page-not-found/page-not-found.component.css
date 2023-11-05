@@ -1,0 +1,49 @@
+#bg-video {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  background-image: url("https://res.cloudinary.com/dhsyeivzr/video/upload/v1699134295/gfp-astro-timelapse_yipdxe_znusoh.mp4");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*{
+  background-image: linear-gradient(125deg,#6a89cc,#b8e994);
+}
+*/
+
+h1 {
+  font-size: 200px;
+  font-weight: 900;
+  letter-spacing: 20px;
+  background-image: url("https://res.cloudinary.com/dhsyeivzr/image/upload/v1697503492/library_by_parkurtommo_d81bdlo_skouib.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  height: 150px; /* Aumenta la altura */
+  padding-top: 50px; /* Aumenta el padding-top */
+
+}
+a{
+  text-decoration: none;
+  background: #e55039aa;
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+a:hover{
+  background: #e55039;
+}

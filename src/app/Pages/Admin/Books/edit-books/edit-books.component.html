@@ -1,20 +1,19 @@
 
-<div class="container ekatn mb-3">
-  <div class="row featurette">
-
+<div class="container  mb-3">
+  <div class="row ">
     <div class="col-md-7 position-static0 d-block rounded-2 shadow" style="border:1px solid rgb(114, 103, 103);">
-      <div class="container mt-3" style="margin-bottom: 30px">
+      <div class="container mt-3">
         <h1 class="fs-2 text-center pt-6 mt-5 mb-4  lh-1 fw-bold text-dark stil">Editar libro</h1>
       <form (ngSubmit)="actualizarLibro()">
 
         <div class="form-floating mb-3 " >
 
-          <input type="username" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.idBooks" name="idBooks" readonly>
-          <label for="floatingInput" class="fs-5">Numero del libro</label>
+          <input type="username" class=" form-control rounded-1 px-4 "  required [(ngModel)] = "libro.idBooks" name="idBooks" readonly>
+          <label for="floatingInput" class="fs- mt-x5">Numero del libro</label>
       </div>
           <div class="form-floating mb-3 " >
-            <input type="username" class=" form-control rounded-1 px-4 mb-3 "  required [(ngModel)] = "libro.nombre" name="nombre" >
-            <label for="floatingInput" class="fs-5">Nombre del libro</label>
+            <input type="username" class=" form-control rounded-1 px-4 mb-3  "  required [(ngModel)] = "libro.nombre" name="nombre" >
+            <label for="floatingInput" class="fs-5 mt-x">Nombre del libro</label>
         </div>
 
         <div class="col-md-12 mb-3">
@@ -27,74 +26,85 @@
 
         <div class="form-floating mb-3">
           <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.img" name="img" >
-          <label for="floatingInput" class="fs-5">Imagen del libro</label>
+          <label for="floatingInput" class="fs-5 mt-x">Imagen del libro</label>
       </div>
 
       <div class="form-floating mb-3">
         <input type="text" class=" form-control rounded-1 px-4" required [(ngModel)] = "libro.autor" name="autor" >
-        <label for="floatingInput" class="fs-5">Autor del libro</label>
+        <label for="floatingInput" class="fs-5 mt-x">Autor del libro</label>
     </div>
 
 
 
-      <div class="row g-0">
-        <div class="col-sm-6 ">
-          <div class=" reniun form-floating mb-3">
+      <div class="row ">
+        <div class="col ">
+          <div class="  form-floating mb-3">
             <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.editorial" name="editorial" >
-            <label for="floatingInput" class="fs-5">Editorial</label>
+            <label for="floatingInput" class="fs-5 mt-x">Editorial</label>
           </div>
         </div>
-        <div class="col-sm-5">
+        <div class="col">
           <div class="form-floating mb-3">
             <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.publicacion" name="publicacion" >
-            <label for="floatingInput" class="fs-5">Año de publicacion</label>
+            <label for="floatingInput" class="fs-5 mt-x">Año de publicacion</label>
             </div>
         </div>
       </div>
 
       <div class="form-floating mb-3">
         <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.paginas" name="paginas" >
-        <label for="floatingInput" class="fs-5">Total paginas</label>
+        <label for="floatingInput" class="fs-5 mt-x">Total paginas</label>
       </div>
 
-      <div class="form-floating mb-3">
-        <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.formato" name="formato" >
-        <label for="floatingInput" class="fs-5">Formato del libro</label>
-      </div>
+      <div class="row">
 
-      <div class="form-floating mb-3">
-        <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.isbn" name="isbn" >
-        <label for="floatingInput" class="fs-5">Codigo ISBN</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.genero" name="genero" >
-        <label for="floatingInput" class="fs-5">Genero del libro</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.documento" name="documento" >
-        <label for="floatingInput" class="fs-5">Archivo</label>
-      </div>
-      <div class="form-floating mb-3">
-        <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.idioma" name="idioma" >
-        <label for="floatingInput" class="fs-5">Idioma del libro</label>
-      </div>
-
-      <div class="row g-0">
-        <div class=" col-sm-6">
-          <div class="form-floating mb-3 reniun">
-            <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.costo" name="costo" >
-            <label for="floatingInput" class="fs-5">Costo del libro</label>
-        </div>
-        </div>
-        <div class="col-sm-5">
+        <div class="col">
           <div class="form-floating mb-3">
-            <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.estado" name="estado" >
-            <label for="floatingInput" class="fs-5">Estado del libro</label>
+            <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.formato" name="formato" >
+            <label for="floatingInput" class="fs-5 mt-x">Formato del libro</label>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="form-floating mb-3">
+            <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.formato" name="formato" >
+            <label for="floatingInput" class="fs-5 mt-x">Formato del libro</label>
           </div>
         </div>
       </div>
 
-      <div class="text-center">
+
+
+      <div class="form-floating mb-3">
+        <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.genero" name="genero" >
+        <label for="floatingInput" class="fs-5 mt-x">Genero del libro</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.documento" name="documento" >
+        <label for="floatingInput" class="fs-5 mt-x">Archivo</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.idioma" name="idioma" >
+        <label for="floatingInput" class="fs-5 mt-x">Idioma del libro</label>
+      </div>
+
+      <div class="row">
+        <div class=" col">
+          <div class="form-floating  ">
+            <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.costo" name="costo" >
+            <label for="floatingInput" class="fs-5 mt-x">Costo del libro</label>
+        </div>
+        </div>
+        <div class="col">
+          <div class="form-floating">
+            <input type="text" class=" form-control rounded-1 px-4"  required [(ngModel)] = "libro.estado" name="estado" >
+            <label for="floatingInput" class="fs-5 mt-x">Estado del libro</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-3">
         <button class="btn btn-success  signup1 w-100 mb-2 btn btn-lg  text-dark">
           Guardar
         </button >

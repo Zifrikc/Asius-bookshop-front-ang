@@ -36,4 +36,8 @@ export class NavbarComponent implements OnInit {
   public isUser(): boolean {
     return this.login.getUserRol() === 'Usuario';
   }
+  public isAdmin(): boolean {
+    return this.login.getUserRol() === 'Administrador'; // Ajusta esto según la lógica de tu aplicación
+  }
+
 }

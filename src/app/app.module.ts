@@ -38,7 +38,10 @@ import { BooksComponent } from './Pages/Users/Books/books/books.component';
 import { BooksDetailsComponent } from './Pages/Users/Books/books-details/books-details.component';
 import { BooksBuyComponent } from './Pages/Users/Books/books-buy/books-buy.component';
 import { NavsComponent } from './Pages/Users/navs/navs.component';
-
+import { UsersPerfilComponent } from './Pages/Users/users-perfil/users-perfil.component';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatPaginatorModule} from '@angular/material/paginator';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +66,8 @@ import { NavsComponent } from './Pages/Users/navs/navs.component';
     BooksComponent,
     BooksDetailsComponent,
     BooksBuyComponent,
-    NavsComponent
+    NavsComponent,
+    UsersPerfilComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +87,10 @@ import { NavsComponent } from './Pages/Users/navs/navs.component';
     MatDividerModule,
     MatListModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTreeModule,
+    MatMenuModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

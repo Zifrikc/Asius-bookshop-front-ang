@@ -1,55 +1,30 @@
 <div class="sliderbar">
-  <h1 class="fs-4 fw-semibold text-center mt-2 ff-v">Panel administrativo</h1>
+  <h1 class="fs-4 fw-semibold text-center mt-2  ">Panel administrativo</h1>
   <li class="border-top my-3"></li>
-  <ul class="list-unstyled ps-0">
-    <li class="mb-1">
-      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" routerlink = "/admin" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-        Inicio
-      </button>
 
-    </li>
+  <div class="row g-0">
+    <button mat-button routerLink="/admin"><i class="bi bi-house fs-5"></i> Inicio</button>
+    <button mat-button routerLink = "/admin/perfil" ><i class="bi bi-person fs-5"></i> Perfil</button>
+  <button mat-button routerLink = "/admin/view-users"><i class="bi bi-people fs-5"></i> Usuarios</button>
 
-    <li class="mb-1">
-      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" routerLink = "/admin/perfil" data-bs-toggle="collapse" data-bs-target="#user-collapse" aria-expanded="false">
-        Perfil
-      </button>
-    </li>
+  <button mat-button [matMenuTriggerFor]="books"><i class="bi bi-journal fs-5"></i> Libros</button>
+  <mat-menu #books="matMenu" xPosition="before">
+    <button mat-menu-item routerLink = "/admin/view-books">Libros registrados</button>
+    <button mat-menu-item routerLink = "/admin/add-books">Agregar nuevo libro</button>
+  </mat-menu>
 
-    <li class="mb-1">
-      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="false">
-        Usuarios
-      </button>
-      <div class="collapse" id="users-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/view-users">Ver usuarios</a></li>
-          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded">Agregar usuario</a></li>
-        </ul>
-      </div>
-    </li>
+  <button mat-button [matMenuTriggerFor]="events"><i class="bi bi-calendar-event fs-5"></i> Eventos</button>
+  <mat-menu #events="matMenu" xPosition="before">
+    <button mat-menu-item routerLink = "/admin/view-events">Eventos registrados</button>
+    <button mat-menu-item routerLink = "/admin/add-events"> Agregar nuevo evento</button>
+  </mat-menu>
 
-    <li class="mb-1">
-      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#books-collapse" aria-expanded="false">
-        Libros
-      </button>
-      <div class="collapse" id="books-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/view-books">Ver libros</a></li>
-          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/add-books">Agregar nuevo libro</a></li>
-        </ul>
-      </div>
-    </li>
+  <button mat-button ><i class="bi bi-bag-check fs-5"></i> Ventas</button>
 
-    <li class="mb-1">
-      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#events-collapse" aria-expanded="false">
-        Eventos
-      </button>
-      <div class="collapse" id="events-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/view-events">Ver eventos</a></li>
-          <li><a  class="link-body-emphasis d-inline-flex text-decoration-none rounded" routerLink = "/admin/add-events">Agregar nuevo evento</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="border-top my-3"></li>
-  </ul>
+
+  <button mat-button ><i class="bi bi-bar-chart-line fs-5"></i> Estadisticas</button>
+
+
+
+</div>
 </div>

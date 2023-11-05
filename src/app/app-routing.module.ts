@@ -1,3 +1,4 @@
+import { UsersPerfilComponent } from './Pages/Users/users-perfil/users-perfil.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './Pages/index/index.component';
@@ -87,6 +88,10 @@ const routes: Routes = [
     {
       path : 'books-buy' ,component : BooksBuyComponent,
     },
+
+    {
+      path : 'users-perfil' ,component : UsersPerfilComponent,
+    }
 
   ]},
 
