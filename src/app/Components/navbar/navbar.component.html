@@ -25,6 +25,12 @@
                   </a>
               </li>
 
+              <li class="nav-item navbar-brand" *ngIf="isloginEst && isUser()">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 rounded-5 w-100" type="search" placeholder="Buscar..." aria-label="Search">
+                </form>
+
+              </li>
 
             <li class="nav-item navbar-brand">
               <a class="nav-link text-white"
@@ -61,6 +67,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item"  [routerLink]="'/admin/perfil'">Perfil</a></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" >Modo oscurro</a></li>
                 <li><a class="dropdown-item" >Configuraciones</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -76,6 +83,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item"  [routerLink]="'/user/users-perfil'">Perfil</a></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" >Modo oscurro</a></li>
                 <li><a class="dropdown-item" >Configuraciones</a></li>
                 <li><hr class="dropdown-divider"></li>

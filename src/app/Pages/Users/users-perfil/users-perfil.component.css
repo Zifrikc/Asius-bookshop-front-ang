@@ -1,0 +1,49 @@
+.card-description button{
+  text-decoration: none;
+  background: #e55039aa;
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.card-description button:hover{
+  background: #e55039;
+}
+.card-description a{
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(17, 17, 165);
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+mat-card-actions button{
+
+  background: #e55039aa;
+  color: #fff;
+  padding: 6px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+
+
+mat-card-actions button:hover{
+  background: #e55039;
+}

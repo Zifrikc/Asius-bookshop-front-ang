@@ -1,3 +1,106 @@
-<div class="container">
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active  fs-4"><a>Usuarios</a></li>
+      <li class="breadcrumb-item fs-4" >Perfil </li>
+    </ol>
+  </nav>
+  <div class="row">
+  <div class="col-md-3">
+    <div class="card card-profiler">
+      <div class="card-avatar text-center">
+          <div class="figure mt-2">
+              <img class="img rounded-circle" src="{{user.img}}" alt="" width="180" height="180px" />
+          </div>
+      </div>
+      <div class="card-body text-center">
+          <h5 class="card-category"><p class="fw-lighter  disabled text-center">  {{user.authorities[0].authority}}</p></h5>
+          <h4 class="card-title text-center">{{user.nombuser}}</h4>
+          <div class="card-description d-flex flex-column">
+            <h4 class="fw-semibold">Libros destacados</h4>
+            <a>El sendero del guardosque</a>
+            <a>El destino de los ilenios</a>
+            <a>La guerra de los cielos</a>
+            <div class="text-center mt-3">
+              <button  class="btn w-50 rounded-5" >Editar</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="col-md-3">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title class="fs-4 fvl">Detalles</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="example-form">
+          <mat-form-field class="example-full-width ">
+            <mat-label class="text-dark">Nombre</mat-label>
+            <input matInput placeholder="Nombre" value=" {{user.nombuser}}" disabled>
+          </mat-form-field>
+          <mat-form-field class="example-full-width ">
+            <mat-label class="text-dark">Apellidos</mat-label>
+            <input matInput placeholder="Nombre" value=" {{user.apelliuser}}" disabled>
+          </mat-form-field>
+          <mat-form-field class="example-full-width ">
+            <mat-label class="text-dark">Correo electronico</mat-label>
+            <input matInput placeholder="Nombre" value=" {{user.emailuser}}" disabled>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width ">
+            <mat-label class="text-dark">Numero de telefono</mat-label>
+            <input matInput placeholder="Nombre" value=" {{user.telefuser}}" disabled>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width ">
+            <mat-label class="text-dark">Perfil</mat-label>
+            <input matInput placeholder="Nombre" value=" {{user.perfiluser}}" disabled>
+          </mat-form-field>
+        </form>
+      </mat-card-content>
+      <mat-card-actions class="ms-auto p-2">
+        <button mat-button>EDITAR</button>
+      </mat-card-actions>
+    </mat-card>
+
+
+    </div>
+
+    <div class="col-md-6">
+      <div class="grid-margin stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title fw-semibold ">Libros comprados</h2>
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th >Nombre</th>
+                    <th>Autor</th>
+                    <th>Idioma</th>
+                    <th>Formato</th>
+                    <th>Actios</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-danger rounded-5"><i class="bi bi-eye"></i> Leer</button>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
